@@ -22,8 +22,7 @@ https://owasp.org/www-community/attacks/SQL_Injection
 - Applying the Principle of least privilege
 
 ### Our Approach
-
-### Alternatives
+https://www.php.net/manual/en/mysqli.real-escape-string.php
 
 ## Tools used 
 
