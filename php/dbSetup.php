@@ -18,6 +18,10 @@
             $this->connection->close();
     
         }
+        
+        public function sanitize($stringArg) : string {
+            return mysqli_real_escape_string($stringArg);
+        }
 
         public function login($uaccount, $password) {
 
