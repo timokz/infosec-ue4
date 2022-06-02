@@ -13,8 +13,13 @@
 
         if(isset($_POST["submit"])) {
 
+            //the dangerous way, unsanitized
             $uaccount = $_POST["uaccountName"];
             $password = $_POST["password"];
+
+            //the better way, sanitized
+            // $uaccount = databaseHelper->sanitize($_POST["uaccountName"]);
+            // $uaccount = databaseHelper->sanitize($_POST["password"]);
 
             if(empty($_POST["uaccountName"]) || empty($_POST["password"])) {
                 throw new Exception("Bitte u:account und Passwort eingeben!");
