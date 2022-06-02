@@ -22,6 +22,8 @@ https://owasp.org/www-community/attacks/SQL_Injection
 - Applying the Principle of least privilege
 
 ### Our Approach
+
+Sanitizing the input strings with the mysql method:  real-escape-string
 https://www.php.net/manual/en/mysqli.real-escape-string.php
 
 ## Tools used 
